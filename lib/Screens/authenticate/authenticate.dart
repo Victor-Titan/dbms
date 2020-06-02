@@ -21,12 +21,11 @@ class _AuthenticateState extends State<Authenticate> {
     if(showSignIn)
     {
       return Container(
-        child: Register()
-      );
+        child: Register(toggleView: toggleView));
     }
     else {
       return Container(
-        child: SignIn()
+          child: SignIn(toggleView: toggleView)
       );
     }
   }
